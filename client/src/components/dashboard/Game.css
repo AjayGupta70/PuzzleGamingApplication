@@ -201,7 +201,7 @@ body, html {
   .score {
     margin: 13% auto;
     padding: 20px;
-    background: #fff;
+    background: rgb(119, 89, 89);
     border: 1px solid #666;
     width: 300px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
@@ -213,7 +213,7 @@ body, html {
     font-weight: 600;
     font-size: 30px;
     font-family: cursive;
-    color: #3d3d3d;
+    color: #e7e7e7;
   }
   
   #scr_time {
@@ -221,7 +221,7 @@ body, html {
     font-weight: 600;
     font-size: 22px;
     font-family: cursive;
-    color: #3d3d3d;
+    color: #e7e7e7;
   }
   
   #scr_moves {
@@ -229,7 +229,7 @@ body, html {
     font-weight: 600;
     font-size: 22px;
     font-family: cursive;
-    color: #3d3d3d;
+    color: #f7f7f7;
   }
   
   .start {
@@ -244,6 +244,7 @@ body, html {
     position: absolute;
     margin: 0 auto;
     padding: 7px 30px;
+    width: 90%;
     /* left: 50%; */
     transform: translate(-50%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -253,7 +254,7 @@ body, html {
     background-color: #E74C3C;
     /* border-bottom: 5px solid #BD3E31; */
     /* text-shadow: 0px -2px #BD3E31; */
-    border-radius: 7px;
+    border-radius: 100px;
     z-index: 999;
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
@@ -268,12 +269,13 @@ body, html {
   
   .button {
     margin: 0px 10px 10px 0px;
-    border-radius: 10px;
-    font-family: cursive;
+    border-radius: 100px;
+    /* width: 100%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
     color: #FFF;
     text-decoration: none;
-    background-color: #0fcd71;
+    background-color: #fa1a82;
     /* border-bottom: 5px solid #BD3E31; */
     /* text-shadow: 0px -2px #BD3E31; */
     z-index: 999;

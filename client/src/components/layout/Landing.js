@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Landing extends Component {
   render() {
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div className="container valign-wrapper" style={{height:"90vh", backgroundColor:"#ddc2c2"}} >
         <div className="row">
           <div className="col s12 center-align">
             <h4>
@@ -19,10 +19,10 @@ class Landing extends Component {
                 to="/register"
                 style={{
                   width: "140px",
-                  borderRadius: "3px",
+                  borderRadius: "30px",
                   letterSpacing: "1.5px"
                 }}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                className="btn btn-large waves-effect waves-light hoverable red accent-3"
               >
                 Register
               </Link>
@@ -32,10 +32,10 @@ class Landing extends Component {
                 to="/login"
                 style={{
                   width: "140px",
-                  borderRadius: "3px",
+                  borderRadius: "30px",
                   letterSpacing: "1.5px"
                 }}
-                className="btn btn-large btn-flat waves-effect white black-text"
+                className="btn btn-large waves-light hoverable red white-text"
               >
                 Log In
               </Link>

@@ -17,9 +17,14 @@ module.exports = {
 ```
 
 ## Quick Start
-
+ 
+ Username admin@gmail.com
+ Password: 123456789
 ```javascript
 // Install dependencies for server & client
+
+#Username and password for Admin
+
 cd client
 npm i
 cd ..

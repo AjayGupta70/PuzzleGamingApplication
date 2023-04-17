@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="navbar-fixed">
       <nav className="z-depth-0">
-        <div className="nav-wrapper white">
+        <div className="nav-wrapper black">
           <Link
             to="/"
             style={{
@@ -13,8 +13,7 @@ const Navbar = () => {
             }}
             className="col s5 brand-logo center black-text"
           >
-            <i className="material-icons">code</i>
-            <span>PuZzLe <span style={{color:"#0099ff"}}>Game</span></span>
+            <span style={{color:"#fff"}}>The Puzzle Application</span>
           </Link>
         </div>
       </nav>

@@ -13,10 +13,7 @@ class Dashboard extends Component {
   };
 
   state = {
-    usr:"",
     start: false,
-    level: 0,
-    time: 0,
     admin:false
   }
 
@@ -38,41 +35,16 @@ class Dashboard extends Component {
 
   render() {
     const { user } = this.props.auth;
-    // console.log(user);
-    const fetch = async () => {
-      try {
-        // console.log(typeof (username.userName));
-        const res = await axios({
-          method: 'post',
-          url: '/api/users/gusrinfo',
-          data: {
-            user: user.name.split(" ")[0]
-          }
-        });
-        // console.log(res);
-        this.setState({
-          level: res.lvl,
-          time: res.time,
-          usr: res.name
-        })
-
-      } catch (error) {
-        console.log(error);
-      }
-    }
-
-    // fetch();
 
     return (
       <>
-        {this.state.start === false && this.state.admin=== false ? <div style={{ height: "75vh" }} className="container valign-wrapper">
+        {this.state.start === false && this.state.admin=== false ? <div style={{ height: "90vh",backgroundColor:"#ddc2c2"}} className="container valign-wrapper">
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
-                <b>Hey there,</b> {user.name.split(" ")[0]}
+                <b>Admin Online,</b> {user.name.split(" ")[0]}
                 <p className="flow-text grey-text text-darken-1">
-                  You are logged into the-tricky{" "}
-                  <span style={{ fontFamily: "monospace" }}>PuZzLe</span> app 👏
+                  <span style={{ fontFamily: "monospace" }}>The PuzzLe</span> Application Configuration
                   <br />
                   {/* <span>Total Level Cleared: {this.state.level}  </span>{"    "}
                   <span>Total Time Taken: {this.state.time}</span> */}
@@ -83,20 +55,20 @@ class Dashboard extends Component {
                 <button
                   style={{
                     width: "150px",
-                    borderRadius: "3px",
+                    borderRadius: "30px",
                     letterSpacing: "1.5px",
                     marginTop: "1rem"
                   }}
                   onClick={user.name.split(" ")[0]==='admin'?this.onAdminClick:this.onStartClick}
                   className="btn btn-large waves-effect waves-light hoverable red accent-3"
                 >
-                  {user.name.split(" ")[0]==='admin'?"Lets_Start":"Start_Game"}
+                  {user.name.split(" ")[0]==='admin'?"Operate":"Ready"}
                 </button>
 
                 <button
                   style={{
                     width: "150px",
-                    borderRadius: "3px",
+                    borderRadius: "30px",
                     letterSpacing: "1.5px",
                     marginTop: "1rem"
                   }}

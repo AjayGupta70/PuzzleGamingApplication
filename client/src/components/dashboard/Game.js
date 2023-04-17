@@ -149,7 +149,7 @@ const Game = ({ user }) => {
                     const timeDifferece = async () => {
                         var diff = date2 - date1;
                         var msec = diff;
-                        var real = msec/1000;
+                        var real = msec / 1000;
                         var hh = Math.floor(msec / 1000 / 60 / 60);
                         msec -= hh * 1000 * 60 * 60;
                         mm = Math.floor(msec / 1000 / 60); // Gives Minute
@@ -166,7 +166,7 @@ const Game = ({ user }) => {
                             }
                         });
                         console.log(result.data);
-                        
+
 
                         return 0;
                     }
@@ -229,17 +229,17 @@ const Game = ({ user }) => {
             fetch();
         });
 
-        return () => console.log("Cleanup..");
+        return () => console.log("Clean");
     }, []);
     return (
-        <div>
+        <div style={{ height: "100vh", backgroundColor: "#ddc2c2", padding: "2rem 15rem" }}>
 
             {/* <!-- partial:index.partial.html --> */}
-            <div id="container">
-            <Link to="/" className="btn-flat waves-effect">
-              <i className="material-icons left">keyboard_backspace</i> Back to
-              home
-            </Link>
+            <div id="container"  >
+                <Link to="/" className="btn-flat waves-effect">
+                    <i className="material-icons left">keyboard_backspace</i> Back to
+                    home
+                </Link>
                 <a href="#" class="button start">Start</a>
                 <div class="box">
                     <div class="me full"></div>
@@ -249,7 +249,7 @@ const Game = ({ user }) => {
 
             <div class="cover" >
                 <div class="score">
-                    <p id="scr_head"> Puzzel Solved...</p>
+                    <p id="scr_head"> Puzzel Solved Successfully</p>
                     <p id="scr_time"> Time : <span id="min">00</span> Min <span id="sec">00</span> Sec</p>
                     <p id="scr_moves"> Moves : <span id="moves"></span></p>
                     <div class="button OK">OK</div>
